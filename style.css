@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #F2F6F5;
+    font-family: "Inter", sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 10%;
+    align-items: center;
+}
+
+header nav ul{
+    display: flex;
+    flex-direction: row;
+}
+
+nav .nav_links li{
+    padding: 0 20px;
+    list-style: none;
+}
+
+.nav_links li a{
+    text-decoration: none; 
+    color: #908D8D;
+}
+
+header p {
+    font-weight: 700;
+}
+
+.nav_buttons button{
+    padding: 7px 15px;
+    margin-left: 10px;
+    border-radius: 30px;
+    font-weight: 800;
+}
+
+.nav_buttons .login{
+    border: 3px solid #007042;
+    color:  #007042;
+}
+
+.nav_buttons .sign-up{
+    border: 3px solid black;
+}
+
+header .icons{
+    display: none;
+}
+
+main h1{
+    font-weight: 800;
+    font-style: italic;
+    /* border: 2px solid black; */
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis : 30% !important;
+    padding-bottom: 20px;
+}
+
+main h1 span{
+    font-size: 40px;
+    color: #007042;
+}
+
+.jumbotron {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap; 
+}
+
+.image {
+    flex: 2; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.image img {
+    max-width: 100%;
+}
+
+.text {
+    flex: 1; 
+    padding: 20px;
+    padding-left: 10%;
+    display: flex;
+    flex-direction:column;
+    text-align: left;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu img{
+    max-width: 100%;
+}
+
+.menu-promo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+/* Container Card */
+.title-promo{
+    padding: 20px 30px;
+
+}
+.card {
+    width: 300px; 
+    background-color: #F2F6F5;
+    border-radius: 15px; 
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.1); 
+    overflow: hidden; 
+    display: flex;
+    flex-direction: column; 
+}
+
+.card-image img {
+    width: 100%; 
+    height: 200px;
+    object-fit: cover; 
+}
+
+.card-content {
+    padding: 15px;
+    text-align: left; 
+}
+
+.card-content h3 {
+    font-size: 18px;
+    color: #333; 
+    margin: 10px 0; 
+}
+
+.card-content p {
+    font-size: 14px;
+    color: #666; 
+    margin: 0;
+}
+
+/* end card */
+
+.menu-promo{
+    margin-bottom: 50px;
+}
+    
+@media screen and (max-width: 768px) {
+    header .icons{
+        display: flex;
+        font-size: 30px;
+    }
+
+    header nav{
+        width: 100%;
+    }
+
+    header nav .nav_links{
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+    }
+
+    header{
+        flex-wrap: wrap;
+        gap: 20px;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+    }
+    
+    header .nav_buttons{
+        display: none;
+    }
+
+    .hidden{
+        display: none;
+    }
+
+    main{
+        padding-top: 7rem;
+    }
+
+    .margin-nav{
+        margin-top: 110px;
+    }
+
+    .jumbotron {
+        flex-wrap: wrap-reverse; 
+        flex-direction: column;
+    }
+
+    .image img {
+        max-width: 80%; 
+        max-height: 400px; 
+    }
+ 
+    .menu{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .menu img{
+        max-width: 30%;
+    }
+
+    .menu-promo{
+       flex-direction: column;
+       align-items:center;
+       gap: 20px;
+    }
+}
